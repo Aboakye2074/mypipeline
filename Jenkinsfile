@@ -1,4 +1,5 @@
-node('master') {
+pipeline {
+    agent any
     stage('Build') {
         echo 'Building...'
         sh 'make'
