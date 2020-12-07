@@ -1,15 +1,15 @@
 pipeline {
     agent any
-    stage('Build') {
+    stage('Hello') 
         echo 'Building...'
         sh 'make'
     }
-    stage('Test') {
+    stage('Hello') {
         echo 'Testing...'
         sh 'make check || true'
         junit '**/target/*.xml'
     }
-    stage('Deploy') {
+    stage('Hello') {
         echo 'Deploying...'
         sh 'make publish'
     }
