@@ -1,4 +1,4 @@
-node('anyNodeName') {
+node('afia') {
     stage('Build') {
         echo 'Building...'
         sh 'make'
