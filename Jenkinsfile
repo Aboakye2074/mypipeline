@@ -1,16 +1,15 @@
 pipeline {
     agent any
-    stage('Hello') 
-        echo 'Building...'
-        sh 'make'
+
+    tools{
+        maven "M3"
     }
-    stage('Hello') {
-        echo 'Testing...'
-        sh 'make check || true'
-        junit '**/target/*.xml'
-    }
-    stage('Hello') {
-        echo 'Deploying...'
-        sh 'make publish'
+
+    stages{
+        stage('Build'){
+            steps {
+                sh "mvn clean compile"
+            }
+        }
     }
 }
