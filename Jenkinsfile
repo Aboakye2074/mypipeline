@@ -12,5 +12,4 @@ pipeline {
     stage('Hello') {
         echo 'Deploying...'
         sh 'make publish'
-    }
 }
