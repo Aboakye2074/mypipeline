@@ -2,7 +2,7 @@ pipeline {
 
 environment {
 
-BUILD_SCRIPTS_GIT="http://http://18.220.56.111:8080//scm/~afia/mypipeline.git"
+BUILD_SCRIPTS_GIT="http://http://3.143.108.233:8080//scm/~afia/mypipeline.git"
 
 BUILD_SCRIPTS='mypipeline'
 
