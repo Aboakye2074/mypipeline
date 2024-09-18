@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-                echo 'Initializing..'
+                echo 'initializing..'
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'testing..'
                 echo 'Running pytest..'
             }
         }
